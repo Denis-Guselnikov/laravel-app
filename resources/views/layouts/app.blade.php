@@ -14,10 +14,12 @@
                 <div class="container-fluid">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link menu-link__active">Главная страница</a>
+                            <a class="nav-link menu-link {{ $mainLink }}"
+                                href="{{ route('home') }}"> Главная страница</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link menu-link">Каталок статей</a>
+                            <a class="nav-link menu-link {{ $articleLink }}"
+                                href="{{ route('article.index') }}">Каталок статей</a>
                         </li>
                     </ul>
                     <a href="https://github.com/Denis-Guselnikov" class="d-flex justify-content-end">
